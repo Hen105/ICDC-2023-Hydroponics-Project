@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Plants Control</title>
+    <script>
+        function waterPlants() {
+            // Use AJAX to send a request to the Python script
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://192.168.7.193:5000/water-plants", true);
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>Water Plants Control</h1>
+    <img src="./?action=stream" />
+    <button onclick="waterPlants()">WATER PLANTS</button>
+</body>
+</html>
