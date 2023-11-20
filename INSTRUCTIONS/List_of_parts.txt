@@ -1,3 +1,0 @@
-Hello and welcome to the third project of the year, Hydroponics!
-In this project you will learn how to code HTML, grow plants, code python,
-manage a webserver, use ar raspbery pi and arduino, and so much more!
