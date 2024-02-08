@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Arduino Controller </title>
+   <script>
+      function sendCommand() {
+	 var xhr = new XMLHttpRequest
+	 xhr.open("GET", "/send8", true);
+	 xhr.onreadystatechange = function () {
+	    if (xhr.readState == 4 && xhr.status == 200){
+		  alert("Command Sent")
+	       }
+	    };
+	    xhr.send()
+	 }
+   </script>
+</head>
+<body>
+   <button onclick="sendCommand()"> send '8' to Arduino</button>
+</body>
+</html>
